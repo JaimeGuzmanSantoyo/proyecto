@@ -28,7 +28,7 @@
           <button type="submit" class="btn btn-primary" name="registro"><a href="inicio.php">Registrarse</button>
         </form></a>
         <!-- Enlace para redirigir al formulario de inicio de sesión -->
-        <p class="mt-3">¿Ya tienes una cuenta? <a href="login.php">Inicia sesión aquí</a></p>
+        <p class="mt-3">¿Ya tienes una cuenta? <a href="Index.php">Inicia sesión aquí</a></p>
       </div>
     </div>
   </div>
