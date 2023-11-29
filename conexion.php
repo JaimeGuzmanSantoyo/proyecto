@@ -1,4 +1,22 @@
-<?php
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class=" blue lighten-2"style="height:300px;"><center> <p class="flow-text">
+Conectado
+</p></center>
+</div>
+</body>
+</html><?php
 
 $Server = "localhost";
 $usuario = "root";
@@ -11,9 +29,9 @@ $conexion = new mysqli($Server,$usuario,$passw,$namedb,3308); // en este caso le
 if($conexion->connect_error){
     die("la conexion ha fallado".$conexion ->connect_ernno);
 }else{
-echo "----------------------Humano la conexion esta establecida ,Bienvenido a la matrix ------01100011 01101111 01101101 01100101 01101110 01111010 01100001 01101110 01100100 01101111 00100000 01100101 01101100 00100000 01110000 01110010 01101111 01100011 01100101 01110011 01101111 00100000 ";
+echo " Conectado ";
 }
 
-echo "<h1><br><a href='eliminarformato.php'>conectar al inicio </br></a></h1>";
+echo "<h1><br><a href='inicio.php'>conectar al inicio </br></a></h1>";
 
 ?>

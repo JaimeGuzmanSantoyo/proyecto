@@ -47,7 +47,7 @@
         <li><a href="#">Link 3</a></li>
     </ul>
 
-<h1 style = "text-align:center;" class = "   light-blue accent-3"> Boton para eliminar a un usuario </h1>
+<h1 style = "text-align:center;" class = "   light-blue accent-3"> Boton para guardar  a un usuario </h1>
  <ul id="Menu Drop" class="dropdown-content" >
         <li>
             <a href="#">Sub menu</a>
@@ -68,14 +68,10 @@
 
 
 
-    <form style = " text-align:center;" method= "POST" action=eliminar.php;>
+    
+       <center> <button class ="btn  purple accent-3"type="submit"><a href="formulario.php">ingresar usuario</button> </a> </center> 
 
-    <input  type="text" name="no_cuenta" placeholder="Numero de Cuenta" />  
-        <br />
-
-        <button class ="btn  purple accent-3"type="submit">eliminar usuario</button> 
-
-    </form>
+  
 
 
 

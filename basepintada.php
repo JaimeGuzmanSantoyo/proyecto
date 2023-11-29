@@ -14,31 +14,24 @@ $resultado = $conexion->query($consulta_sql);
 // Retorna el numero de filas del resultado. Si encuentra mas de uno lo usamos para imprimir el resultado en nuestra tabla
 $count = mysqli_num_rows($resultado); 
  
+
+
 echo "<table border='2' >
     <tr>
+        <th>Clave</th>
+        
         <th>Usuario</th>
         
-        <th>No Cuenta Institucional</th>
-        <th>Direccion</th>
-        <th>Telefono</th>
-        <th>Correo Electronico</th>
-        <th>Contraseña</th>
-        <th>Fecha de Registro</th>
     </tr>";
 
 if ( $count>0 ){
     //aqui se pintarian los registro de la DB
     while( $row = mysqli_fetch_assoc($resultado)  ){
      echo "<tr>";
-     echo"<td>". $row['nombre_usuario'] ."</td>";
+     echo"<td>". $row['Clave'] ."</td>";
   
-     echo"<td>". $row['no_cuenta'] ."</td>";
-     echo"<td>". $row['direccion'] ."</td>";
-     echo"<td>". $row['telefono'] ."</td>";
-     echo"<td>". $row['email'] ."</td>";
-     echo"<td>". $row['password'] ."</td>";
-     echo"<td>". $row['fecha_registro'] ."</td>";
-     echo "</tr>";
+     echo"<td>". $row['Usuario'] ."</td>";
+     echo"<td>". $row['Nombre_completo'] ."</td>";
      
     }
     echo "</table>";
@@ -49,7 +42,7 @@ if ( $count>0 ){
     echo"<h1 style='color:red' >Sin Ningun registro</h1>";
     }
 
-    echo "<h1><a href='eliminarformato.php'>Elimnar Usuario</a></h1>";
+    echo "<h1><a href='login.php'>Voler al Formulario </a></h1>";
 
 ?>
 
